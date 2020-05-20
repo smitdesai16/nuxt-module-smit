@@ -1,7 +1,7 @@
 export default function(moduleOptions) {
 	const options = {
 		...moduleOptions,
-		...this.options.headlessCMS
+		...this.options.smitNuxtModule
 	}
 	console.log(options);
 }
