@@ -1,4 +1,4 @@
-const { resolve, join } = require('path')
+import { resolve, join } from "path"
 
 export default function(moduleOptions) {
 	const options = {
