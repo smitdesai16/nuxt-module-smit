@@ -14,6 +14,12 @@ export default function(moduleOptions) {
 		fileName: join(options.headlessCMS, 'debug.ts'),
 		options
 	})
+
+	this.addPlugin({
+		src: resolve(__dirname, 'plugins/index.ts'),
+		fileName: join(options.headlessCMS, 'plugins/index.ts'),
+		options
+	})
 }
 
 module.exports.meta = require('./package.json')
