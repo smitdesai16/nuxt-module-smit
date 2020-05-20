@@ -10,8 +10,8 @@ export default function(moduleOptions) {
 
 	
 	this.addPlugin({
-		src: resolve(__dirname, 'debug.js'),
-		fileName: join(options.headlessCMS, 'debug.js'),
+		src: resolve(__dirname, 'debug.ts'),
+		fileName: join(options.headlessCMS, 'debug.ts'),
 		options
 	})
 }
