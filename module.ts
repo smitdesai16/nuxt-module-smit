@@ -8,7 +8,6 @@ export default function(moduleOptions) {
 
 	if (!options.headlessCMS) options.headlessCMS = 'contentful';
 
-	
 	this.addPlugin({
 		src: resolve(__dirname, 'debug.ts'),
 		fileName: join(options.headlessCMS, 'debug.ts'),
@@ -16,8 +15,14 @@ export default function(moduleOptions) {
 	})
 
 	this.addPlugin({
-		src: resolve(__dirname, 'plugins/index.ts'),
-		fileName: join(options.headlessCMS, 'plugins/index.ts'),
+		src: resolve(__dirname, 'plugins/global.ts'),
+		fileName: join(options.headlessCMS, 'plugins/global.ts'),
+		options
+	})
+
+	this.addPlugin({
+		src: resolve(__dirname, 'components/index.ts'),
+		fileName: join(options.headlessCMS, 'components/index.ts'),
 		options
 	})
 }
