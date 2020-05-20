@@ -19,6 +19,12 @@ export default function(moduleOptions) {
 		fileName: join(options.headlessCMS, 'plugins/global.ts'),
 		options
 	})
+
+	this.addPlugin({
+		src: resolve(__dirname, 'middleware/demo.ts'),
+		fileName: join(options.headlessCMS, 'middleware/demo.ts'),
+		options
+	})
 }
 
 module.exports.meta = require('./package.json')
